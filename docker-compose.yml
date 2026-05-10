@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment:
+      SOLVER_PATH: /app/solver/build/ocr-equation-solver
+      TESSDATA_PATH: /usr/share/tesseract-ocr/5/tessdata
+      PORT: 5001
+      FRONTEND_ORIGIN: http://localhost:5173
+    ports:
+      - "5001:5001"
+    volumes:
+      - backend_uploads:/app/backend/uploads
+      - backend_processed:/app/backend/processed
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    depends_on:
+      - backend
+    environment:
+      VITE_API_BASE_URL: http://localhost:5001
+    ports:
+      - "5173:5173"
+
+volumes:
+  backend_uploads:
+  backend_processed:

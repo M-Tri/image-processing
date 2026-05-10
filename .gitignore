@@ -5,5 +5,7 @@ uploads/
 processed/
 solver/build/
 *.o
+/main
+/textToMatrix
 ocr-equation-solver
 .DS_Store

@@ -20,6 +20,30 @@ frontend -> backend -> C++ solver
 
 The solver generates multiple processed versions of the input image, runs OCR on each one, parses the resulting equations, and selects the most reliable result using consensus voting.
 
+## Docker Setup
+
+Docker is the easiest way to run the project because it installs OpenCV, Tesseract, Leptonica, Eigen, CMake, Node, and builds the C++ solver automatically.
+
+From the project root:
+
+```bash
+docker compose up --build
+```
+
+Then open:
+
+```text
+http://localhost:5173
+```
+
+The backend runs on:
+
+```text
+http://localhost:5001
+```
+
+Docker uses named volumes for backend uploads and processed images, so generated files remain available while you are testing.
+
 ## C++ Solver Setup
 
 Dependencies:
