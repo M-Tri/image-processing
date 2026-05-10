@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+uploads/
+processed/
+solver/build/
+*.o
+.DS_Store
