@@ -5,4 +5,5 @@ uploads/
 processed/
 solver/build/
 *.o
+ocr-equation-solver
 .DS_Store
