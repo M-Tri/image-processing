@@ -1,0 +1,52 @@
+[
+  {
+    "image": "equationsImage3.png",
+    "equations": ["x=7-y", "2x-y=5"],
+    "expected": { "status": "Unique solution", "solution": { "x": 4, "y": 3 } }
+  },
+  {
+    "image": "equationsImage4.png",
+    "equations": ["3x=16-2y", "x-y=2"],
+    "expected": { "status": "Unique solution", "solution": { "x": 4, "y": 2 } }
+  },
+  {
+    "image": "equationsImage5.png",
+    "equations": ["2x=18-3y", "4x-y=8"],
+    "expected": { "status": "Unique solution", "solution": { "x": 3, "y": 4 } }
+  },
+  {
+    "image": "equationsImage6.png",
+    "equations": ["x=11-2y", "3x-y=5"],
+    "expected": { "status": "Unique solution", "solution": { "x": 3, "y": 4 } }
+  },
+  {
+    "image": "equationsImage7.png",
+    "equations": ["x-y=3", "x=1-y"],
+    "expected": { "status": "Unique solution", "solution": { "x": 2, "y": -1 } }
+  },
+  {
+    "image": "equationsImage8.png",
+    "equations": ["2x-y-z=0", "3x-y-2z=1", "5x-2y-z=3"],
+    "expected": { "status": "Unique solution", "solution": { "x": 2, "y": 3, "z": 1 } }
+  },
+  {
+    "image": "equationsImage9.png",
+    "equations": ["6x-y-z=1", "5z-x-y=12", "4y-x-z=4"],
+    "expected": { "status": "Unique solution", "solution": { "x": 1, "y": 2, "z": 3 } }
+  },
+  {
+    "image": "equationsImage10.png",
+    "equations": ["4x=10-2y", "x=4-y"],
+    "expected": { "status": "Unique solution", "solution": { "x": 1, "y": 3 } }
+  },
+  {
+    "image": "equationsImage11.png",
+    "equations": ["5x-y=14", "2x=7-y"],
+    "expected": { "status": "Unique solution", "solution": { "x": 3, "y": 1 } }
+  },
+  {
+    "image": "equationsImage12.png",
+    "equations": ["x=14-3y", "2x=13-y"],
+    "expected": { "status": "Unique solution", "solution": { "x": 5, "y": 3 } }
+  }
+]
